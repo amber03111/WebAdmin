@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    min-height:100%;
+    max-height: 100%;
+    --antd-wave-shadow-color:transpant;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    line-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #e0e7ee;
+}
+
+Header div:nth-child(n) {
+    display: inline-block;
+    font-weight: 4px;
+}
+
+
+
+header div:nth-child(1) {
+    position: relative;
+    font-size: 20px;
+    font-family: '思源黑体';
+    margin-left: 10px;
+}
+
+
+.search,
+.search-text {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    line-height: 30px;
+    background-color: #e5e5e7;
+}
+
+.submit {
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: transparent;
+    height: 30px;
+    width: 30px;
+    font-family: 'icomoon';
+    font-size: 15px;
+}
+
+.submit:hover {
+    color: white;
+}
+
+
+.five {
+    margin-right: 30px;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.ant-layout,.ant-layout-has-sider{
+    height: 500px;
+}
+.site-layout-background{
+    background-color:#F8F5F5;
+}
+.ant-layout-sider,.ant-layout-sider-dark,.site-layout-backgroundr{
+    height: 500px;
+    overflow:auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px
+}
+/*定义滚动条轨道*/ 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb {
+    background-color: #c8d6d1;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 100%,transparent 100%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+Link {
+    text-decoration: none;
+    color: #fff;
+  }
+.link-active{
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+  }
+
+.ant-menu-item-active,.ant-menu-item,.ant-menu-item-selected,.exact-active-class
+{
+    text-decoration: none;
+    color: rgb(18, 14, 20);
+    background-color:#FFFFFF;
+}
+li .ant-menu-item-only-child::after{
+    background-color: white!important;
+}

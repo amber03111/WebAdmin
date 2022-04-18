@@ -1,0 +1,41 @@
+.tabel{
+   margin-top: 60px;
+  margin:60px 40px;
+  word-break:keep-all;
+  text-align: center
+}
+.bigbody{
+  position: relative;
+}
+.headerone{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around
+}
+.theads{
+  background-color: #f3ebeb;
+
+}
+.theads tr th:nth-child(1){
+  width: 30px;
+
+}
+
+.theads tr th:nth-child(n){
+  border: transparent;
+}
+.tbody tr td:nth-child(n){
+  border: transparent;
+  border-right: 0;
+  
+}
+tr{
+  height: 40px;
+}
+
+.btn2{
+  border: 0;
+  height: 25px;
+  
+}

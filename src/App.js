@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Routes,Route} from 'react-router-dom';
+//import { useLocation, Navigate} from 'react-router-dom';
+import Teacher from'./pages/teacher/index';
+import Administrators from'./pages/administrators/index'
+import Frontpage from './pages/frontpage/index';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    
+    render(){
+        
+        return( 
+            <Routes>
+            
+            <Route path="/administrator/*" element={< Administrators  />} />
+            <Route path="/teacher/*" element={<Teacher/>} />
+            <Route exact path="/*" element={ <Frontpage/>}/>
+            
+       </Routes>
+        )
+    }
 }
 
+//function RequireAuth({children}: {children: JSX.Element}) {
+ //   let location = useLocation();
+    
+ //   return <Navigate to="/" state={{ from: location}} replace />
+//}
+
 export default App;
+
